@@ -45,11 +45,13 @@ nav a, nav button {
 }
 
 .hero {
-  min-height: 90vh;
+  min-height: 70vh;              /* reduced height */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px;                     /* controls spacing between text */
+  padding-top: 40px;
 }
 
 .btn {
