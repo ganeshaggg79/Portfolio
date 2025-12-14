@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --bg: #0f172a;
   --text: #e5e7eb;
@@ -20,13 +23,17 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: 0.3s;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
+
 
 nav a, nav button {
   margin-left: 15px;
@@ -38,12 +45,11 @@ nav a, nav button {
 }
 
 .hero {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero span {
-  color: var(--accent);
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
